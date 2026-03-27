@@ -1069,83 +1069,186 @@ Copy
       font-size: 20px;
     }
 
-    .socials {
-      margin-top: 20px;
+    .follows-us {
+      margin-top: 35px;
     }
 
-    .socials button {
-      padding: 10px;
-      margin-right: 10px;
-      border: none;
-      background: orange;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
+    .follows-us h4 {
+      font-size: 13px;
+      margin-bottom: 12px;
+      color: #111;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icon {
+      width: 44px;
+      height: 44px;
+      background: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-4px);
     }
 
     .contact-form {
       width: 60%;
       background: #fff;
-      padding: 25px;
+      padding: 35px;
       border-radius: 15px;
+      box-sizing: border-box;
     }
 
     .contact-form h3 {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #111;
     }
 
     .row {
       display: flex;
-      gap: 10px;
+      gap: 15px;
+    }
+
+    .row input {
+      flex: 1;
     }
 
     input,
     textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
+      padding: 14px;
+      margin-bottom: 20px;
       border-radius: 8px;
       border: 1px solid #ddd;
+      box-sizing: border-box;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #e5b64b;
     }
 
     textarea {
-      height: 80px;
+      height: 100px;
+      resize: vertical;
     }
 
-    .contact-form button {
-      background: orange;
-      color: white;
-      padding: 12px;
-      border-radius: 20px;
+    .send-enquiry-btn {
+      background: #000;
+      color: #fff;
+      padding: 16px;
+      margin-top: 10px;
+      border-radius: 30px;
       border: none;
-      width: 20%;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      transition: opacity 0.3s;
     }
 
-    .contact-form button:hover {
-      background: #e59400;
+    .send-enquiry-btn:hover {
+      opacity: 0.8;
     }
 
-    .map-section {
-      background: #0b1c3d;
-      margin-top: 40px;
-      padding: 40px;
-      text-align: center;
-      border-radius: 15px;
-      color: white;
-    }
-
-    .map-section button {
-      background: orange;
-      color: black;
-      width: auto;
-      padding: 10px 20px;
+    .site-footer {
+      width: 100%;
       margin-top: 10px;
     }
 
-    .map-section button:hover {
-      background: #e59400;
+    .map-banner {
+      background: #0b1528;
+      padding: 80px 40px;
+      text-align: center;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .map-icon-circle {
+      width: 55px;
+      height: 55px;
+      background: #3bc4d7;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .map-banner h3 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .map-banner-btn {
+      background: #e5b64b;
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 30px;
+      border: none;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .map-banner-btn:hover {
+      opacity: 0.9;
+    }
+
+    .footer-bottom {
+      background: #0b1020;
+      padding: 60px 20px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-logo-text {
+      color: #e5b64b;
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-family: inherit;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-tagline {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 60px;
+    }
+
+    .footer-copyright {
+      color: #666;
+      font-size: 13px;
     }
 
     /* ================================================ */
@@ -1691,11 +1794,17 @@ Copy
         font-size: 16px;
       }
 
-      .socials button {
-        padding: 7px 10px;
-        font-size: 11px;
-        width: 100%;
-        margin-bottom: 6px;
+      .follows-us {
+        margin-top: 25px;
+      }
+
+      .social-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .social-icon svg {
+        transform: scale(0.9);
       }
 
       .contact-form {
@@ -1717,23 +1826,36 @@ Copy
         padding: 7px;
       }
 
-      .contact-form button {
+      .send-enquiry-btn {
         width: 100%;
-        font-size: 11px;
+        font-size: 12px;
+        padding: 12px;
       }
 
-      .map-section {
-        padding: 15px;
-        margin-top: 15px;
+      .site-footer {
+        margin-top: 5px;
       }
 
-      .map-section h3 {
-        font-size: 14px;
+      .map-banner {
+        padding: 40px 20px;
       }
 
-      .map-section button {
-        font-size: 11px;
-        padding: 7px 12px;
+      .map-banner h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .map-banner-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+      }
+
+      .footer-bottom {
+        padding: 30px 20px;
+      }
+
+      .footer-logo-text {
+        font-size: 18px;
       }
     }
 
@@ -2232,9 +2354,32 @@ Copy
           </div>
         </div>
 
-        <div class="socials">
-          <button onclick="openInstagram()">Instagram</button>
-          <button onclick="openWhatsApp()">WhatsApp</button>
+        <div class="follows-us">
+          <h4>FOLLOWS US</h4>
+          <div class="social-icons">
+            <a href="#" onclick="openInstagram()" class="social-icon instagram">
+              <svg viewBox="0 0 24 24" fill="url(#ig-grad)">
+                <defs>
+                  <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#fd5949" />
+                    <stop offset="50%" stop-color="#d6249f" />
+                    <stop offset="100%" stop-color="#285AEB" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.26.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.26-.07-1.64-.07-4.85s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0z" />
+                <path
+                  d="M12 5.84A6.16 6.16 0 1 0 12 18.16A6.16 6.16 0 0 0 12 5.84ZM12 16A4 4 0 1 1 12 8A4 4 0 0 1 12 16Z" />
+                <circle cx="18.41" cy="5.59" r="1.44" />
+              </svg>
+            </a>
+            <a href="#" onclick="openWhatsApp()" class="social-icon whatsapp">
+              <svg viewBox="0 0 24 24" fill="#25D366">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a5.8 5.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -2256,22 +2401,34 @@ Copy
 
           <textarea placeholder="Message"></textarea>
 
-          <button type="submit">Send Enquiry →</button>
+          <button type="submit" class="send-enquiry-btn">Send Enquiry &rarr;</button>
         </form>
       </div>
 
     </div>
+  </section>
 
-    <div class="map-section">
+  <footer class="site-footer">
+    <div class="map-banner">
+      <div class="map-icon-circle">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 7L10 5L15 7L20 5V18L15 20L10 18L5 20V7Z" fill="#fff" />
+          <path d="M10 5V18M15 7V20" stroke="#E6E6E6" stroke-width="1" stroke-linejoin="round" />
+          <path d="M7 16 C 9 8, 11 20, 14 12 C 15 8, 16 10, 18 6" stroke="#ff4d4f" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 2" />
+          <path d="M17 5 L 19 7 M19 5 L 17 7" stroke="#ff4d4f" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </div>
       <h3>PV Academy Location</h3>
-      <p style="font-size:11px; margin-top:5px; opacity:0.8;">Learn. Grow. Succeed. - Est. 2025</p>
-      <button onclick="openMap()" style="border-radius: 20px; width: auto; margin:15px auto;">Open in Google Maps
-        →</button>
-      <p style="font-size:9px; margin-top:20px; opacity:0.5;">@ 2025 PV Academy. All rights reserved | Founder : Praveen
-        V</p>
+      <button class="map-banner-btn" onclick="openMap()">Open in Google Maps &rarr;</button>
     </div>
 
-  </section>
+    <div class="footer-bottom">
+      <h3 class="footer-logo-text">PV Academy Location</h3>
+      <p class="footer-tagline">Learn. Grow. Succeed. - Est. 2025</p>
+      <p class="footer-copyright">@ 2025 PV Academy. All rights reserved. | Founder : Praveen V</p>
+    </div>
+  </footer>
 
   <script>
     function toggleMenu() {
